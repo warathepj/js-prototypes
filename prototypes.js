@@ -15,3 +15,7 @@ function personFactory(firstName, lastName) {
 
 let johnDoe = personFactory("John", "Doe");
 let janeSmith = personFactory("Jane", "Smith");
+
+console.log(johnDoe.greet === janeSmith.greet);
+
+console.log(johnDoe.greet(janeSmith));
